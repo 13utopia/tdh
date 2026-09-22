@@ -1,0 +1,132 @@
+{
+    "packages": [
+        {
+            "name": "nitropack/httpclient",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wpengine/np-httpclient.git",
+                "reference": "b986457339b11d3ff0410512e2c621dff36a93e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpengine/np-httpclient/zipball/b986457339b11d3ff0410512e2c621dff36a93e1",
+                "reference": "b986457339b11d3ff0410512e2c621dff36a93e1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nitropack/url": "dev-master",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "monolog/monolog": "^1.1|^2.0|^3.0",
+                "phpunit/phpunit": "^9.6 || ^10.0",
+                "react/http": "^1.8"
+            },
+            "time": "2026-09-15T08:37:45+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "NitroPack\\HttpClient\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "composer prepare-test-image && composer run-unit-tests && composer run-feature-tests"
+                ],
+                "prepare-test-image": [
+                    "docker build --build-arg PHP_VERSION=$(php -r \"echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;\") -t nitropack-httpclient:latest ."
+                ],
+                "run-unit-tests": [
+                    "vendor/bin/phpunit --testsuite unit"
+                ],
+                "run-feature-tests": [
+                    "vendor/bin/phpunit --testsuite feature"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Ivailo Hristov"
+                }
+            ],
+            "description": "HttpClient library written in PHP, without relying on cURL nor url_fopen",
+            "keywords": [
+                "client",
+                "http",
+                "library",
+                "php"
+            ],
+            "support": {
+                "source": "https://github.com/wpengine/np-httpclient/tree/master",
+                "issues": "https://github.com/wpengine/np-httpclient/issues"
+            },
+            "install-path": "../nitropack/httpclient"
+        },
+        {
+            "name": "nitropack/url",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wpengine/np-url.git",
+                "reference": "fd7e66dc1da4c5d36b5b991f9aaa5c1f295eea8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpengine/np-url/zipball/fd7e66dc1da4c5d36b5b991f9aaa5c1f295eea8d",
+                "reference": "fd7e66dc1da4c5d36b5b991f9aaa5c1f295eea8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0||^10.0||^11.0"
+            },
+            "time": "2026-06-01T11:54:42+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "NitroPack\\Url\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Ivailo Hristov"
+                }
+            ],
+            "description": "URL manipulation library",
+            "keywords": [
+                "library",
+                "manipulation",
+                "php",
+                "url"
+            ],
+            "support": {
+                "source": "https://github.com/wpengine/np-url/tree/master",
+                "issues": "https://github.com/wpengine/np-url/issues"
+            },
+            "install-path": "../nitropack/url"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

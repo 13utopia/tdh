@@ -1,0 +1,39 @@
+{
+    "tanyadentalhouse.in": {
+        "siteId": "XYThPpqXVTAdqEyENzRpFMWbBPoLVBSa",
+        "siteSecret": "eYplB65t7RIDrPmYL6BFRdav6i8fE2tJjGCtiG0OW2YNw2oUdrrsYnjXNeVQn0G3",
+        "blogId": 1,
+        "compression": true,
+        "webhookToken": "8a0e5f960aed85484f4ad530810fff76",
+        "home_url": "https:\/\/tanyadentalhouse.in",
+        "admin_url": "https:\/\/tanyadentalhouse.in\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isNginxHelperActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": false,
+        "isAeliaCurrencySwitcherActive": false,
+        "isGeoTargetingWPActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.19.4",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": "base",
+            "ajaxShortcodes": {
+                "enabled": false,
+                "shortcodes": []
+            },
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        },
+        "additional_domains": [],
+        "minimumLogLevel": null
+    },
+    "config_path": "e6a5334b2b7f9e29a9bda35e2e33d759"
+}

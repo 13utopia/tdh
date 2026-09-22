@@ -1,0 +1,1 @@
+<?php{"v":"4.5.3","gen":"2ffd48d64185","path":"\/home\/u198419904\/domains\/tanyadentalhouse.in\/public_html\/wp-content\/plugins\/crux-curator-cue\/crux-curator-cue.php","slug":"crux-curator-cue","state":"ok","start_ts":1789194671,"boot_ts":1789194671,"req":1789194489}

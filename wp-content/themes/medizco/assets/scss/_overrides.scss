@@ -1,0 +1,110 @@
+/* Overrides
+================================================== */
+
+/** ElementsKit Button **/
+.ekit-wid-con a.elementskit-btn:before {
+    left: -1px;
+    right: -1px;
+    width: auto;
+}
+
+/** Header Off-Canvas Widget **/
+.ekit-sidebar-group {
+    .ekit-wid-con > & > div.ekit-overlay {
+        z-index: 99999;
+    }
+}
+
+.ekit-wid-con div.ekit-sidebar-widget {
+    background-color: #272727;
+
+    .ekit_close-side-widget {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .ekit_sidebar-textwidget {
+        padding-top: 40px;
+    }
+}
+
+/** Blog Posts Widget **/
+.elementor-widget-elementskit-blog-posts {
+    > .elementor-widget-container {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        > .ekit-wid-con {
+            > .row {
+                margin-left: -10px;
+                margin-right: -10px;
+
+                > [class*="col-"] {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+/** Search Widget **/
+.ekit-promo-popup {
+    &.mfp-bg,
+    &.mfp-wrap {
+        z-index: 99999;
+    }
+}
+
+/** Lightbox **/
+.dialog-lightbox-widget-content {
+    left: 0 !important;
+    width: 100%;
+}
+
+/** Icon Box **/
+.icon_box_3 {
+    .ekit-wid-con .elementskit-infobox {
+        .elementskit-box-header {
+            position: absolute;
+            top: -8px;
+            left: 0;
+            right: 0;
+        }
+
+        &:hover i.icon {
+            color: #fff !important;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        &:first-child {
+            .ekit-wid-con .elementskit-infobox {
+                &.hover_from_top {
+                    &:before {
+                        top: auto;
+                        bottom: -100%;
+                    }
+
+                    &:hover:before {
+                        top: auto;
+                        bottom: 0;
+                    }
+                }
+
+                .elementskit-box-header {
+                    top: auto;
+                    bottom: -8px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+/** Text Widget **/
+.elementor-widget-text-editor {
+    &.short_desc p {
+        margin-bottom: 32px;
+    }
+}

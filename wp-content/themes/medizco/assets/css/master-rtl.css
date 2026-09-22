@@ -1,0 +1,418 @@
+body {
+   direction: rtl;
+   unicode-bidi: embed;
+}
+.owl-carousel .owl-stage-outer {
+   direction: ltr;
+}
+
+.media > .pull-left{
+   margin-left: 20px;
+   margin-right: auto;
+}
+
+img.pull-left{
+   margin-left: 20px;
+   margin-right: auto;
+}
+
+img.pull-right{
+   margin-right: 20px;
+   margin-left: auto;
+}
+
+.dropcap{
+   float: right;
+   margin: 5px 0 5px 15px ;
+}
+
+.btn.fill{
+   margin-right: 20px;
+   margin-left: auto;
+}
+
+.btn-link i{
+   margin-right: 6px;
+   margin-left: auto;
+}
+
+.post-readmore i{
+   margin-right: 5px;
+   margin-left: auto;
+}
+
+.post {
+   text-align: right;
+}
+.related-post-area {
+   text-align: right;
+}
+.post-meta span{
+   margin-right: 15px;
+   margin-right: auto;
+   display: inline-block;
+}
+span.post-date-info{
+   display: inline-block;
+   direction: rtl;
+}
+.post-meta span i{
+   margin-left: 2px;
+   margin-right: auto;
+  
+}
+
+.owl-dot:first-child{
+   padding-right: 15px;
+   padding-left: 0;
+}
+
+.owl-dot:last-child{
+   padding-left: 15px;
+   padding-right: 0;
+}
+
+.owl-prev, .owl-next{
+   left: 0;
+   right: auto;
+}
+
+.owl-prev{
+   right: 0;
+   left: auto;
+}
+
+.wp-caption img[class*="wp-image-"]{
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.alignleft{
+   float: right;
+   margin-left: 1.5em;
+   margin-right: auto;
+   margin: 5px 0 20px 20px ;
+}
+
+.alignright{
+   float: left;
+   margin-right: 1.5em;
+   margin-left: auto;
+}
+
+.gallery-item{
+   text-align: right;
+   padding: 0 0 0 1em ;
+}
+
+.gallery-caption{
+   text-align: right;
+   padding: 0 0 0 10px;
+}
+
+.alignnone{
+   margin: 5px 0 20px 20px ;
+}
+
+.aligncenter, div.aligncenter{
+   margin: 5px auto 5px auto ;
+}
+
+a img.alignright{
+   float: left;
+   margin: 5px 20px 20px 0 ;
+}
+
+a img.alignnone{
+   margin: 5px 0 20px 20px ;
+}
+
+a img.alignleft{
+   float: right;
+   margin: 5px 0 20px 20px ;
+}
+
+a img.aligncenter{
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.wp-caption.alignnone{
+   margin: 5px 0 20px 20px ;
+}
+
+.wp-caption.alignleft{
+   margin: 5px 0 20px 20px ;
+}
+
+.wp-caption.alignright{
+   margin: 5px 20px 20px 0 ;
+}
+
+.screen-reader-text:focus{
+   right: 5px;
+   left: auto;
+}
+
+.post-password-form input[type="password"]{
+   margin-right: 10px;
+   margin-left: auto;
+}
+
+.tag-lists a, .tagcloud a{
+   margin-right: 3px;
+   margin-left: auto;
+}
+
+.blog-post-comment .comments-list .trackback .comment-body{
+   margin-right: 0;
+}
+.sidebar .widget .widget-title{
+   text-align: right;
+}
+.sidebar .widget .widget-title::before{
+   right: 0;
+}
+.sidebar .widget{
+   text-align: right;
+}
+.service-time li span:last-child{
+   float: left;
+}
+
+.blog-post-comment{
+   text-align: right;
+}
+
+.pull-right.reply{
+   float: left;
+}
+.breadcrumb li:not(:last-child)::after{
+   left: -15px;
+   right: auto;
+}
+/* RTL Comments */
+.comments-list .pingback .comment-body{
+   margin-right: 0;
+}
+
+.comments-list .comment-body{
+   margin-right: 110px;
+   margin-left: auto;
+}
+
+.comments-list img.comment-avatar{
+   margin-left: 30px;
+   margin-right: auto;
+   float: right !important;
+}
+
+.comments-list .comment-reply-link i{
+   margin-left: 5px;
+   margin-right: auto;
+}
+
+.comments-reply{
+   margin: 0 70px 0 0 ;
+}
+
+#cancel-comment-reply-link{
+   float: left;
+}
+
+.author-box .author-info{
+   margin-right: 90px;
+   margin-left: auto;
+}
+
+.sidebar-active .alignfull{
+   right: auto;
+   left: auto;
+   margin-right: 0;
+   margin-left: 0;
+}
+
+/* custom rtl css */
+.text-left{
+   text-align: right !important;
+}
+.text-right{
+   text-align: left !important;
+}
+
+/** Services CTA **/
+.services_cta_btn:after {
+    content: "\f104";
+    left: 20px;
+    right: auto;
+    margin-top: -10px;
+}
+
+@media (min-width: 1025px) {
+    .services_cta_action .elementskit-infobox:before,
+    .services_cta_action .ekit-wid-con:before,
+    .services_cta_action .ekit-wid-con:after {
+       transform: skewX(24deg);
+    }
+}
+
+/** Services List **/
+.medizco_servics_list > li > a {
+   padding-left: 35px;
+   padding-right: 28px;
+}
+.medizco_servics_list > li > a > i {
+   left: 25px;
+   right: auto;
+}
+.medizco_servics_list > li > a > i:before {
+   content: "\f053";
+}
+
+/** Select2 **/
+.mf-input-wrapper .select2-container--default .select2-selection--single {
+   text-align: right;
+}
+.mf-input-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow{
+   right: auto;
+   left: 15px;
+}
+.select2_wrap .select2 .select2-selection__arrow > b, 
+.select2_wrap .select2.select2-container--open .select2-selection__arrow > b {
+   right: 0;
+   color: #752323;
+   left: auto;
+}
+.ekit-wid-con .ekit-single-day .ekit-business-day{
+   margin-right: 0;
+}
+.medizco_service_box .elementor-widget-container .elementor-image-box-wrapper .elementor-image-box-content{
+   text-align: right;
+}
+.mptt-shortcode-wrapper .select2{
+   float: right;
+}
+.mptt-shortcode-wrapper .select2 .select2-selection__rendered{
+   text-align: right;
+   padding-right: 20px !important;
+}
+.mptt-shortcode-wrapper > .mptt-shortcode-table > tbody > tr .mptt-inner-event-content{
+   text-align: right;
+}
+.medizco_service_box_3 .ekit-wid-con .simple-card{
+   text-align: right;
+}
+.header_1_search_btn .ekit_navsearch-button:before{
+   left: auto;
+   right: -5px;
+}
+
+@media (min-width: 1025px){
+   .medizco_topbar:before {
+      left: calc(50% + 1140px);
+      right: auto;
+   }
+  
+   .medizco_topbar > .elementor-container:before {
+      left: 99%;
+      right: auto;
+   }
+   .elementskit-navbar-nav-default .elementskit-dropdown {
+      right: 0px;
+      text-align: right;
+      left: auto;
+   }
+   .medizco_logo:before {
+      right: auto;
+      left: -40px;
+      border-left: 2px solid #1db9a0;
+   }
+}
+
+/** Header Search **/
+.ekit_search-button > svg {
+   width: 15px;
+}
+
+/** Header Nav **/
+@media (min-width: 1025px) {
+    .medizco_nav .elementskit-navbar-nav > li:last-child > a {
+        padding-left: 0 !important;
+    }
+}
+
+/** Doctors Slider **/
+.medizco_doctors {
+   direction: ltr;
+}
+
+/** Testimonial **/
+.elementskit-single-testimonial-slider {
+   direction: ltr;
+}
+
+/** Service Box **/
+.medizco_service_box img {
+   transform: scale(-1, 1);
+}
+
+/** Quote Slider **/
+.ekit-wid-con .elementskit-commentor-bio {
+   text-align: left;
+}
+
+.medizco_quote_slider .elementskit-commentor-content > span {
+   margin-left: -20px;
+}
+
+.medizco_quote_slider .elementskit-commentor-content > p {
+   display: -webkit-inline-box;
+  	display: -ms-inline-flexbox;
+  	display: inline-flex;
+}
+
+.medizco_quote_slider .elementskit-commentor-content > ul {
+   left: 0;
+   right: auto;
+}
+
+/** Infographic **/
+.medizco-infographic-bd.top-right:before,
+.medizco-infographic-bd.bottom-right:before {
+    left: 0;
+    right: auto;
+    border-left: 2px solid #f06699;
+    border-right-width: 0;
+}
+.medizco-infographic-bd.top-right .elementor-widget-container:before,
+.medizco-infographic-bd.top-right .ekit-wid-con:before,
+.medizco-infographic-bd.top-right .ekit-wid-con:after,
+.medizco-infographic-bd.bottom-right .elementor-widget-container:before,
+.medizco-infographic-bd.bottom-right .ekit-wid-con:before,
+.medizco-infographic-bd.bottom-right .ekit-wid-con:after {
+    left: 70px;
+    right: auto;
+}
+
+.medizco-infographic-bd.top-left:before,
+.medizco-infographic-bd.bottom-left:before {
+    left: auto;
+    right: 0;
+    border-left-width: 0;
+    border-right: 2px solid #f06699;
+}
+.medizco-infographic-bd.top-left .elementor-widget-container:before,
+.medizco-infographic-bd.top-left .ekit-wid-con:before,
+.medizco-infographic-bd.top-left .ekit-wid-con:after,
+.medizco-infographic-bd.bottom-left .elementor-widget-container:before,
+.medizco-infographic-bd.bottom-left .ekit-wid-con:before,
+.medizco-infographic-bd.bottom-left .ekit-wid-con:after {
+    left: auto;
+    right: 70px;
+}
+
+@media (min-width: 1025px) {
+    .medizco-infographic-bd.top-right .box-body, .medizco-infographic-bd.bottom-right .box-body {
+        text-align: left;
+    }
+}

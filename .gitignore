@@ -1,0 +1,9 @@
+node_modules/
+.next/
+*.png
+*.log
+*.zip
+wp-content/updraft/
+wp-content/uploads/fw-backup/
+.DS_Store
+Thumbs.db

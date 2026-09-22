@@ -1,0 +1,67 @@
+<?php
+namespace NitroPack\SDK\Integrations;
+use \NitroPack\HttpClient\HttpClient;
+use \NitroPack\HttpClient\HttpClientMulti;
+
+class ReverseProxy {
+
+    protected $serverList;
+    protected $purgeMethod;
+    protected $headers;
+
+    public function __construct($serverList=null, $purgeMethod="PURGE", $headers = []) {
+        $this->serverList = $serverList;
+        $this->purgeMethod = $purgeMethod;
+        $this->headers = $headers;
+    }
+
+    public function setServerList($serverList=null) {
+        $this->serverList = $serverList;
+    }
+
+    public function setPurgeMethod($method) {
+        $this->purgeMethod = $method;
+    }
+
+    public function setHeader($name, $value) {
+        $this->headers[$name] = $value;
+    }
+
+    public function purge($url, $newPurgeScheme = false) {
+        if ($newPurgeScheme) {
+            $client = new HttpClient($url);
+            $client->doNotDownload = true;
+
+            foreach ($this->headers as $name => $value) {
+                $client->setHeader($name, $value);
+            }
+
+            $client->fetch(true, $this->purgeMethod);
+
+            return true;
+        }
+
+        if (empty($this->serverList)) return false;
+
+        $httpMulti = new HttpClientMulti();
+        foreach ($this->serverList as $server) {
+            $client = new HttpClient($url);
+            $publicHost = $client->host;
+            $client->hostOverride($client->host, $server);
+            $client->hostHeaderOverride = $publicHost;
+            $client->doNotDownload = true;
+
+            if (strpos($server, '127.0.0.1') !== false || strpos($server, 'localhost') !== false) {
+                $client->scheme = 'http';
+            }
+
+            foreach ($this->headers as $name => $value) {
+                $client->setHeader($name, $value);
+            }
+
+            $httpMulti->push($client);
+        }
+
+        $httpMulti->fetchAll(true, $this->purgeMethod);
+    }
+}
